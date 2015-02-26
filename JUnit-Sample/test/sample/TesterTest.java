@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author Mason
  */
-public class CaseTest {
+public class TesterTest {
     
-    public CaseTest() {
+    public TesterTest() {
     }
     
     @BeforeClass
@@ -40,27 +40,51 @@ public class CaseTest {
 
     @Test
     public void testAdd() {
-        // TODO review the generated test code and remove the default call to fail.
-        //assertTrue(case.add)
+     Tester tester = new Tester();
+
+        int a = 1;
+        int b = 2;
+        assertTrue(tester.add(a, b) == 3);
+        assertFalse(tester.add(b, a) == 1);
     }
     
     @Test
     public void testSub() {
-        
+        Tester tester = new Tester();
+
+        int a = 1;
+        int b = 2;
+        assertTrue(tester.sub(a, b) == -1);
+        assertFalse(tester.sub(b, a) == -1);
     }
     
     @Test
     public void testMult() {
-        
+        Tester tester = new Tester();
+
+        int a = 1;
+        int b = 2;
+        assertTrue(tester.mult(a, b) == 2);
+        assertFalse(tester.mult(b, a) == -2);
     }
     
     @Test
     public void testDiv() {
-        
+        Tester tester = new Tester();
+
+        int a = 1;
+        int b = 2;
+        assertTrue(tester.div(a, b) == 0);
+        assertFalse(tester.div(b, a) == 0);
     }
     
     @Test
     public void testMod() {
-        
+        Tester tester = new Tester();
+
+        int a = 1;
+        int b = 2;
+        assertTrue(tester.mod(a, b) == 1);
+        assertFalse(tester.mod(b, a) == 1);
     }
 }
