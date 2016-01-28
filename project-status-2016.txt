@@ -1,0 +1,4 @@
+Project status:
+flashcards: creating a digital flashcard game for my s.o. to study more easily.  Reached a point where I feel comfortable calling it 1.0.  Future features are to include a GUI, file loading, quiz score calculator, and better organized sections of notes/flashcards.
+
+ga: working on implementing a couple of evolutionary algorithms
